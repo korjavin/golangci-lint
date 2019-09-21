@@ -1,0 +1,41 @@
+run:
+  deadline: 5m
+  tests: false
+output:
+  format: colored-line-number
+  print-issued-lines: true
+  print-linter-name: true
+linters:
+  disable-all: true
+  enable:
+    - golint
+    - misspell
+    - deadcode
+    - govet
+    - typecheck
+    - megacheck
+    - varcheck
+    - unconvert
+    - scopelint
+linters-settings:
+  golint:
+    min-confidence: 0.8
+  misspell:
+    locale: US
+issues:
+  exclude-rules:
+    - linters:
+      - staticcheck
+      text: "SA5001:" #should check returned error
+
+    - linters:
+      - golint
+      text: "use MixedCaps in package name"
+
+    - linters:
+      - golint
+      text: "type name will be used as"
+
+    - linters:
+      - golint
+      text: "don't use leading k in Go names"

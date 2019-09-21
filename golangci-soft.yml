@@ -1,0 +1,20 @@
+run:
+  tests: true
+output:
+  format: colored-line-number
+  print-issued-lines: true
+  print-linter-name: true
+linters:
+  enable-all: true
+  disable:
+    - lll
+linters-settings:
+  golint:
+    min-confidence: 0.8
+  misspell:
+    locale: US
+issues:
+  exclude-rules:
+    - linters:
+      - golint
+      text: "don't use leading k in Go names"
