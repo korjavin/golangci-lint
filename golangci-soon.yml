@@ -1,5 +1,4 @@
 run:
-  deadline: 5m
   tests: false
 output:
   format: colored-line-number
@@ -17,13 +16,20 @@ linters:
     - varcheck
     - unconvert
     - scopelint
+    - errcheck
+    - bodyclose
+    - gocyclo
+    - nakedret
+    - gochecknoinits
+    - whitespace
+
 linters-settings:
   golint:
     min-confidence: 0.8
   misspell:
     locale: US
-  unused:
-    check-exported: false
+  gocyclo:
+    min-complexity: 35
 
 issues:
   exclude-rules:
