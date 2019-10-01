@@ -18,6 +18,7 @@ linters:
     - varcheck
     - unconvert
     - scopelint
+    - goimports
 linters-settings:
   golint:
     min-confidence: 0.8
