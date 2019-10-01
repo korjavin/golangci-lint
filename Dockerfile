@@ -9,6 +9,7 @@ RUN make build
 RUN cp ./golangci-lint /bin/golangci-lint
 ADD golangci-strict.yml /etc
 ADD golangci-soft.yml /etc
+ADD golangci-soon.yml /etc
 
 #RUN curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s
 

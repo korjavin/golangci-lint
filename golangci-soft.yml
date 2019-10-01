@@ -10,11 +10,22 @@ linters:
   enable-all: true
   disable:
     - lll
+    - maligned
 linters-settings:
   golint:
     min-confidence: 0.8
   misspell:
     locale: US
+  gocritic:
+    enabled-tags:
+      - performance
+      - style
+    disabled-checks:
+      - wrapperFunc
+      - dupImport # https://github.com/go-critic/go-critic/issues/845   - experimental
+    funlen:
+      lines: 100
+      statements: 50
 issues:
   exclude-rules:
     - linters:
