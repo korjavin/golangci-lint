@@ -1,6 +1,7 @@
 run:
   deadline: 5m
   tests: false
+  modules-download-mode: vendor
 output:
   format: colored-line-number
   print-issued-lines: true
