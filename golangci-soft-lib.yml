@@ -12,6 +12,7 @@ linters:
     - lll
     - maligned
     - unused
+    - prealloc
 linters-settings:
   golint:
     min-confidence: 0.8
