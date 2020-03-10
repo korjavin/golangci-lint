@@ -11,6 +11,7 @@ linters:
   disable:
     - lll
     - maligned
+    - unused
 linters-settings:
   golint:
     min-confidence: 0.8
