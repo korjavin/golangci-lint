@@ -17,7 +17,6 @@ linters:
     - megacheck
     - varcheck
     - unconvert
-    - errcheck
     - bodyclose
     - scopelint
     - whitespace
