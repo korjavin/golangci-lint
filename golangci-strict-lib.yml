@@ -22,7 +22,6 @@ linters:
     - scopelint
     - whitespace
     - goimports
-    - stylecheck
     - ineffassign
     - gofmt
 
