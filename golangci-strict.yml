@@ -18,6 +18,9 @@ linters:
     - varcheck
     - unconvert
     - scopelint
+    - nakedret
+    - whitespace
+    - gocyclo
 
 linters-settings:
   golint:
@@ -26,6 +29,8 @@ linters-settings:
     locale: US
   unused:
     check-exported: false
+  gocyclo:
+    min-complexity: 35
 
 issues:
   exclude-rules:
