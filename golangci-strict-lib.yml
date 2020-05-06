@@ -17,10 +17,14 @@ linters:
     - megacheck
     - varcheck
     - unconvert
+    - errcheck
+    - bodyclose
     - scopelint
-    - nakedret
     - whitespace
-    - gocyclo
+    - goimports
+    - stylecheck
+    - ineffassign
+    - gofmt
 
 linters-settings:
   golint:

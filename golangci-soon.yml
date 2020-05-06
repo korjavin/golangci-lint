@@ -17,9 +17,9 @@ linters:
     - megacheck
     - varcheck
     - unconvert
-    - scopelint
     - errcheck
     - bodyclose
+    - scopelint
     - gocyclo
     - nakedret
     - gochecknoinits
@@ -27,6 +27,7 @@ linters:
     - goimports
     - stylecheck
     - ineffassign
+    - gofmt
 
 linters-settings:
   golint:
