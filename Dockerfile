@@ -1,4 +1,4 @@
-FROM alpine
+FROM golang
 
 LABEL maintainer="korjavin@gmail.com"
 
