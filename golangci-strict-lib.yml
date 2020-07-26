@@ -23,6 +23,7 @@ linters:
     - goimports
     - ineffassign
     - gofmt
+    - godot
 
 linters-settings:
   golint:
