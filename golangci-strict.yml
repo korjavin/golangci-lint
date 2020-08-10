@@ -24,6 +24,11 @@ linters:
     - ineffassign
     - gofmt
     - godot
+    - nestif
+    - unparam
+    - gofumpt
+    - nolintlint
+    - wsl
 
 linters-settings:
   golint:

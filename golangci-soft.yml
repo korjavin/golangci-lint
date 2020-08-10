@@ -13,6 +13,7 @@ linters:
     - maligned
     - unused
     - prealloc
+    - goerr113
 linters-settings:
   golint:
     min-confidence: 0.8
