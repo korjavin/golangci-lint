@@ -28,7 +28,6 @@ linters:
     - unparam
     - gofumpt
     - nolintlint
-    - wsl
 
 linters-settings:
   golint:

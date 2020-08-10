@@ -28,7 +28,6 @@ linters:
     - stylecheck
     - ineffassign
     - gofmt
-    - wsl
 
 linters-settings:
   golint:

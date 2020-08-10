@@ -14,6 +14,7 @@ linters:
     - unused
     - prealloc
     - goerr113
+    - wsl
 linters-settings:
   golint:
     min-confidence: 0.8
