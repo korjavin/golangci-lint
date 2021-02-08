@@ -8,6 +8,7 @@ RUN wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master
 
 ADD golangci-strict.yml /etc
 ADD golangci-strict-lib.yml /etc
+ADD golangci-strict-scraper.yml /etc
 ADD golangci-soft.yml /etc
 ADD golangci-soft-lib.yml /etc
 ADD golangci-soon.yml /etc

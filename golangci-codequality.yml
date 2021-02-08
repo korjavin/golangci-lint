@@ -13,10 +13,6 @@ linters:
     - maligned
     - unused
     - prealloc
-    - goerr113
-    - wsl
-    - gci
-
 linters-settings:
   golint:
     min-confidence: 0.8
@@ -46,3 +42,4 @@ issues:
       linters:
         - errcheck
 
+  new-from-patch: /tmp/diff
