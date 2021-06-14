@@ -9,7 +9,7 @@ output:
 linters:
   disable-all: true
   enable:
-    - golint
+    - revive
     - misspell
     - deadcode
     - govet
@@ -18,7 +18,7 @@ linters:
     - varcheck
     - unconvert
     - bodyclose
-    - scopelint
+    - exportloopref
     - whitespace
     - goimports
     - ineffassign

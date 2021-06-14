@@ -28,6 +28,7 @@ linters:
     - stylecheck
     - ineffassign
     - gofmt
+    - godot
 
 linters-settings:
   golint:

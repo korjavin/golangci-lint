@@ -23,7 +23,7 @@ linters:
     - goimports
     - ineffassign
     - gofmt
-    # - godot
+    - godot
     - nestif
     - unparam
     - gofumpt
