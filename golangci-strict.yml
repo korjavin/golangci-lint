@@ -38,6 +38,8 @@ linters-settings:
     check-exported: false
   gocyclo:
     min-complexity: 35
+  nestif:
+    min-complexity: 10
 
 issues:
   exclude-rules:
@@ -50,7 +52,23 @@ issues:
       text: "use MixedCaps in package name"
 
     - linters:
-      - golint
+      - revive
+      text: "exported: exported const"
+
+    - linters:
+      - revive
+      text: "exported: comment on exported const"
+
+    - linters:
+      - revive
+      text: "exported: exported var"
+
+    - linters:
+      - revive
+      text: "exported: comment on exported type"
+
+    - linters:
+      - revive
       text: "type name will be used as"
 
     - linters:
