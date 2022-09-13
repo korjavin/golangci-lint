@@ -9,7 +9,7 @@ output:
 linters:
   disable-all: true
   enable:
-    - golint
+    - revive
     - misspell
     - deadcode
     - govet
@@ -19,16 +19,20 @@ linters:
     - unconvert
     - errcheck
     - bodyclose
-    - scopelint
     - gocyclo
     - nakedret
     - gochecknoinits
+    - exportloopref
     - whitespace
     - goimports
     - stylecheck
     - ineffassign
     - gofmt
     - godot
+    - gocritic
+    - unparam
+    - nestif
+    - gocritic
 
 linters-settings:
   golint:
@@ -37,6 +41,16 @@ linters-settings:
     locale: US
   gocyclo:
     min-complexity: 25
+  nestif:
+    min-complexity: 30
+
+gocritic:
+    enabled-tags:
+      - performance
+      - diagnostic
+    disabled-tags:
+      - experimental
+      - opinionated
 
 issues:
   exclude-rules:

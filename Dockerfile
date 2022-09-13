@@ -1,10 +1,11 @@
-FROM golang:1.16
+FROM golang:1.17
 
 LABEL maintainer="korjavin@gmail.com"
 
-WORKDIR /
+WORKDIR /app
 
-RUN wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.40.1
+RUN wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.44.0
+RUN mv ./bin/golangci-lint /bin/golangci-lint
 
 ADD golangci-strict.yml /etc
 ADD golangci-strict-lib.yml /etc

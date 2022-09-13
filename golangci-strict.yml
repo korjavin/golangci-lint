@@ -24,12 +24,23 @@ linters:
     - ineffassign
     - gofmt
     - godot
-    - nestif
-    - unparam
+    # - nestif
+    # - unparam # import has many
     - gofumpt
     - nolintlint
+    - gocritic
 
 linters-settings:
+  gocritic:
+    enabled-checks:
+      - wrapperFunc
+    enabled-tags:
+      # - security
+    disabled-tags:
+      - performance
+      - diagnostic
+      - experimental
+      - opinionated
   golint:
     min-confidence: 0.8
   misspell:
@@ -38,8 +49,8 @@ linters-settings:
     check-exported: false
   gocyclo:
     min-complexity: 35
-  nestif:
-    min-complexity: 10
+  # nestif:
+  #   min-complexity: 70
 
 issues:
   exclude-rules:
